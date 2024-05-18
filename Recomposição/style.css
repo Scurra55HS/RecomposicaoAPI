@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------HEADER------------------------ */
+header {
+    margin: 30px;
+    padding: 50px 150px 50px 150px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* -----------------------MAIN------------------------ */
+#perfil {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+}
+
+.perfil-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+    margin-left: 150px;
+}
+
+.perfil-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 150px;
+    margin-left: 70px;
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bio {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    word-wrap: break-word;
+}
+
+.btn-contato {
+    margin-left: 20px;
+}
+
+.btn button, .seguidores button {
+    background: none;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #a5b4fc;
+    padding: 10px 35px;
+}
+
+.btn button:hover, .seguidores button:hover {
+    background-color: #a5b4fc;
+    color: white;
+    border-radius: 20px;
+}
+
+/* -----------------------SEGUIDORES------------------------ */
+.seguidores {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.seguidores-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.linha {
+    width: 40px;
+    height: 5px;
+    background-color: #a5b4fc;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.seguidor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seguidor img {
+    border-radius: 4px;
+    width: 266px;
+    height: 266px;
+    cursor: pointer;
+}
+
+.seguidores-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 150px;
+    row-gap: 50px;
+}
+
+/* ----------------------FOOTER------------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.social-icons a {
+    color: black;
+}
+
+/* ----------------------RESPONSIVIDADE------------------------- */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .perfil-img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0;
+    }
+
+    .perfil-section {
+        margin-left: 20px;
+    }
+
+    .nome {
+        font-size: 24px;
+    }
+
+    .bio {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .btn button, .seguidores button {
+        padding: 8px 20px;
+    }
+
+    .seguidores-titulo {
+        flex-direction: column;
+    }
+
+    .seguidores-lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .linha {
+        width: 50%;
+        margin-left: 0px;
+    }
+}
